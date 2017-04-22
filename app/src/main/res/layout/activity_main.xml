@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    style="@style/TempConvertor"
+    tools:context="com.example.faiz.temperatureconvertor.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter Temperature"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Celsius2Farenhite"
+        android:id="@+id/c2F"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true"
+        style="@style/Buttons"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Farenhite2Celsius"
+        android:id="@+id/f2C"
+        style="@style/Buttons"
+        android:layout_alignTop="@+id/c2F"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView"
+        android:hint="Result is"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        style="@style/Result"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>
